@@ -298,6 +298,26 @@ export default function App() {
                           </p>
                         </div>
                       </div>
+                      <div className="space-y-4 md:space-y-6">
+                        <div className="h-[2px] bg-[#BFFF00] w-full" />
+                        <div className="flex gap-6 items-start">
+                          <span className="text-[11px] font-display font-bold text-white">03</span>
+                          <p className="text-[11px] text-gray-300 uppercase tracking-[0.15em] leading-relaxed">
+                            Clean &<br />
+                            Maintainable Code
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-4 md:space-y-6">
+                        <div className="h-[2px] bg-[#BFFF00] w-full" />
+                        <div className="flex gap-6 items-start">
+                          <span className="text-[11px] font-display font-bold text-white">04</span>
+                          <p className="text-[11px] text-gray-300 uppercase tracking-[0.15em] leading-relaxed">
+                            User-Centric<br />
+                            Design & UX
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -305,7 +325,7 @@ export default function App() {
             </div>
 
             {/* Bottom Left Icons & Back Button */}
-            <div className="mt-auto pt-6 md:pt-20 flex justify-between items-end gap-4">
+            <div className="mt-auto pt-2 md:pt-20 flex justify-between items-end gap-4">
               <div className="flex flex-col gap-4 md:gap-6">
                 <span className="font-display text-[10px] tracking-[0.4em] uppercase text-gray-600">Contact Us</span>
                 <div className="flex gap-6 md:gap-10 items-center">
