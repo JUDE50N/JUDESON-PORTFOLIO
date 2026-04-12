@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+  
+  --color-bg: #0a0a0a;
+  --color-text: #f5f5f5;
+  --color-muted: #888888;
+  --color-stroke: #1f1f1f;
 }
 
 @layer base {
