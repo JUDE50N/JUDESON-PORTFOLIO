@@ -1,12 +1,12 @@
 <div align="center">
-<img width="1907" height="911" alt="Screenshot 2026-04-12 035747" src="https://github.com/user-attachments/assets/683198fd-16ba-4eed-b3e4-13ecb8fce04a" />   
-<img width="1898" height="903" alt="Screenshot 2026-04-12 040237" src="https://github.com/user-attachments/assets/c68d76f5-8008-4474-8af2-73be530a580f" />
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-
-# Run and deploy your Portfolio
+# Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/c93c1f7d-eabf-47a0-8da0-2875c275129f
 
 ## Run Locally
 
