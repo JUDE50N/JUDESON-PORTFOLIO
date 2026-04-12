@@ -248,12 +248,6 @@ export default function App() {
           >
             <VideoBackground src="https://stream.mux.com/QgTir2Bu4u6d01CqyKEBCks68PIm2nCM7vhwXgenS00tw.m3u8" />
             
-            {/* Vertical Text Left */}
-            <div className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2 flex flex-col items-center gap-8">
-              <span className="font-display text-[10px] tracking-[0.6em] uppercase vertical-text text-gray-500">Portfolio</span>
-              <div className="w-[1px] h-16 bg-gray-800" />
-            </div>
-
             {/* Vertical Text Right */}
             <div className="hidden md:flex absolute right-6 md:right-8 top-1/2 -translate-y-1/2 flex-col items-center gap-8">
               <span className="font-display text-[10px] tracking-[0.6em] uppercase vertical-text text-gray-500">Scroll Down</span>
@@ -311,7 +305,7 @@ export default function App() {
             </div>
 
             {/* Bottom Left Icons & Back Button */}
-            <div className="mt-auto pt-12 md:pt-20 flex justify-between items-end gap-4">
+            <div className="mt-auto pt-6 md:pt-20 flex justify-between items-end gap-4">
               <div className="flex flex-col gap-4 md:gap-6">
                 <span className="font-display text-[10px] tracking-[0.4em] uppercase text-gray-600">Contact Us</span>
                 <div className="flex gap-6 md:gap-10 items-center">
