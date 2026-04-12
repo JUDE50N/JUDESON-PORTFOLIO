@@ -3,19 +3,25 @@ import { useEffect, useState, useRef } from "react";
 
 interface LoadingScreenProps {
   onComplete: () => void;
+  ready?: boolean;
   key?: string;
 }
 
 const words = ["Design", "Create", "Inspire"];
 
-export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
+export default function LoadingScreen({ onComplete, ready = true }: LoadingScreenProps) {
   const [wordIndex, setWordIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const onCompleteRef = useRef(onComplete);
+  const readyRef = useRef(ready);
 
   useEffect(() => {
     onCompleteRef.current = onComplete;
   }, [onComplete]);
+
+  useEffect(() => {
+    readyRef.current = ready;
+  }, [ready]);
 
   // Word Rotation Logic
   useEffect(() => {
@@ -37,7 +43,15 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
     const animate = (currentTime: number) => {
       if (!startTime) startTime = currentTime;
       const elapsed = currentTime - startTime;
-      const nextProgress = Math.min((elapsed / duration) * 100, 100);
+      
+      // Progress calculation: cap at 99 if not ready
+      let nextProgress = (elapsed / duration) * 100;
+      
+      if (!readyRef.current && nextProgress >= 99) {
+        nextProgress = 99;
+      } else {
+        nextProgress = Math.min(nextProgress, 100);
+      }
       
       setProgress(nextProgress);
 
