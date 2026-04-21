@@ -196,6 +196,7 @@ export default function App() {
                     { label: "Frontend", value: "Next.js / React" },
                     { label: "Mobile", value: "React Native / Expo" },
                     { label: "Backend", value: "Node.js / Firebase" },
+                    { label: "Design", value: "Graphics / UI / UX" },
                     { label: "Tools", value: "TypeScript / Tailwind" },
                   ].map((spec, i) => (
                     <div key={i} className="group">
@@ -266,16 +267,20 @@ export default function App() {
                   transition={{ delay: 0.2, duration: 1 }}
                   className="relative z-10"
                 >
-                  <h1 className="font-display text-5xl md:text-8xl lg:text-[10rem] font-bold leading-[0.8] tracking-tighter uppercase mb-10 md:mb-20">
+                  <h1 className="font-display text-5xl md:text-8xl lg:text-[10rem] font-bold leading-[0.8] tracking-tighter uppercase mb-10 md:mb-16">
                     WEB & APP <br />
                     DEVELOPER
                   </h1>
+                  <h4 className=" font-bold  uppercase mt-1 mb-10 text-3xl">
+                    CREATIVE DESIGNER
+                  </h4>
 
                   <div className="max-w-lg">
-                    <h2 className="text-2xl md:text-4xl font-medium leading-[1.1] mb-10 md:mb-20 text-white">
+                    <h6 className="text-2xl md:text-2xl font-small leading-[1.1] mb-10 md:mb-20 text-white">
                       Crafting high-performance<br />
-                      digital solutions.
-                    </h2>
+                      digital solutions through<br />
+                      Design & Development.
+                    </h6>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                       <div className="space-y-4 md:space-y-6">
